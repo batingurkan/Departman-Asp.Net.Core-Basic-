@@ -1,0 +1,19 @@
+﻿@model Birim
+
+@{
+    Layout = "~/Views/shared/_TestLayout.cshtml";
+}
+<h2>Birim Getir</h2>
+
+@using (Html.BeginForm("BirimGuncelle", "Default", FormMethod.Post))
+{
+
+        <b>Birim Id</b>
+    @Html.TextBoxFor(x=>x.BirimId,new {@class="form-control"})
+        <br />
+        <b>Birim Adı</b>
+    @Html.TextBoxFor(x=>x.BirimAd,new {@class="form-control"})
+        <br />
+        <button class="btn "style="background-color:#ff6a00">Birim Güncelle</button>
+
+}

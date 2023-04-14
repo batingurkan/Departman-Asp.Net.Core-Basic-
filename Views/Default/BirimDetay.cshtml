@@ -1,0 +1,35 @@
+﻿@model List<Personel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+@{
+}
+
+<h5>@ViewBag.brm Departmanı</h5>
+
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Şehir</th>
+ 
+  
+    </tr>
+    @foreach (var x in Model)
+    {
+
+        <tr>
+            <td>@x.PersonelID</td>
+            <td>@x.Ad</td>
+            <td>@x.Soyad</td>
+            <td>@x.Sehir</td>
+           
+
+        </tr>
+    }
+</table>
+

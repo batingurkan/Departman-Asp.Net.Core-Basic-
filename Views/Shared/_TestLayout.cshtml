@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CoreDepartman</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CoreDepartman.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body>
+
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+            <h3 class="w3-bar-item">Menu</h3>
+            <a href="/Default/Index" class="w3-bar-item w3-button">Birimler</a>
+            <a href="/Personelim/Index" class="w3-bar-item w3-button">Personeller</a>
+            <a href="#" class="w3-bar-item w3-button">Hakkımızda</a>
+            <a href="#" class="w3-bar-item w3-button">Çıkış</a>
+        </div>
+
+        <!-- Page Content -->
+        <div style="margin-left:15%">
+
+            <div class="w3-container w3-teal">
+                <h1>Asp.Net Core Mvc Proje</h1>
+            </div>
+
+
+            <div class="w3-container">
+                @RenderBody()
+            </div>
+
+        </div>
+
+    </body>
+</html>
+
+
+</body>
+</html>

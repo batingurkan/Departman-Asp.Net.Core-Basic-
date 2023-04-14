@@ -1,0 +1,26 @@
+﻿@model Personel
+
+@{
+    Layout = "~/Views/shared/_TestLayout.cshtml";
+}
+<h2>Birim Getir</h2>
+
+@using (Html.BeginForm("PersonelGuncelle", "Personelim", FormMethod.Post))
+{
+
+
+    <b>Personel Adı</b>
+    @Html.TextBoxFor(x=>x.Ad,new {@class="form-control"})
+    <br />
+    <b>Personel Soyadı</b>
+    @Html.TextBoxFor(x=>x.Soyad,new {@class="form-control"})
+    <br />
+    <b>Şehir</b>
+    @Html.TextBoxFor(x=>x.Sehir,new {@class="form-control"})
+    <br />
+    <b>Birim</b>
+    @Html.TextBoxFor(x=>x.BirimID,new {@class="form-control"})
+    <br />
+    <button class="btn " style="background-color:#ff6a00">Personel Güncelle</button>
+
+}
